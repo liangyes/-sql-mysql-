@@ -22,19 +22,20 @@ select * from table where day=now() group by id having count('id')=1
 <br>
 >>`常用函数`
 <br>
-FROM_UNIXTIME(时间戳)   时间戳转换日期
+`FROM_UNIXTIME(时间戳)   时间戳转换日期`
 
 <br>
-UNIX_TIMESTAMP(日期)  日期转换时间戳
+`UNIX_TIMESTAMP(日期)  日期转换时间戳`
 
 <br>
-NOW()       当前时间戳
-concat(str1,str2)  将多个字符串连接(注意有一个参数是null,返回值位null)
+`NOW()       当前时间戳`
+<br>
+`concat(str1,str2)  将多个字符串连接(注意有一个参数是null,返回值位null)`
 
 <br>
-concat_ws('分隔符',str1,str2)  用分隔符拼接字符串(注意分隔符为null,返回值位null)
+`concat_ws('分隔符',str1,str2)  用分隔符拼接字符串(注意分隔符为null,返回值位null)`
 
 <br>
-group_concat()    如果与group by 搭配使用 相同的列都拼接起来 ，否则所有的列拼接
+`group_concat()    如果与group by 搭配使用 相同的列都拼接起来 ，否则所有的列拼接`
 
 </br>
