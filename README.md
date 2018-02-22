@@ -4,7 +4,7 @@
 
 >>`常用SQL`
 ---
-`统计数据总量(`只有一个字段的时候，* 比 1快，没有主键的时候1比*快 建议任何时候都用 * `)`
+`统计数据总量(`只有一个字段的时候，* 比 1快，没有主键的时候1比*快 建议任何时候都用 * `)`   
 <br>
 select count(*) from  table 
 
@@ -20,6 +20,9 @@ select * from table order by field (id,'1','2','3');
 <br>
 select * from table where day=now() group by id having count('id')=1
 <br>
+`获取最新十条数据`
+<br>
+select * from table order by id desc limit 10
 >>`常用函数`
 <br>
 `FROM_UNIXTIME(时间戳)   时间戳转换日期`
