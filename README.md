@@ -21,6 +21,7 @@ select * from table order by field (id,'1','2','3');
 select * from table where day=now() group by id having count('id')=1
 <br>
 >>`常用函数`
+<br>
 FROM_UNIXTIME(时间戳)   时间戳转换日期
 <br>
 UNIX_TIMESTAMP(日期)  日期转换时间戳
